@@ -2,9 +2,6 @@ function [weights,bias]=RBFTrain(means,bandwidths,tdata,epochs,eta)
 
 dimy=size(tdata)(2);
 
-%weights=2*rand(length(means),1)-1;
-%weights=ones(length(means),1);
-%bias=2*rand()-1;
 weights=zeros(length(means),1);
 bias=0;
 
